@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: auto !important;
+}
+
+.main {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 27%;
+  margin-top: 50px;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 240px;
+}
+
+/* form container */
+.inner-cont {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 10px 0;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 16px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #999999;
+  font-size: 16px;
+}
+
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+  color: #d3d3d3;
+}
+
+button[type="submit"] {
+  padding: 16px 0;
+  border-radius: 5px;
+  border: none;
+  background: #1877f2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.forgotten {
+  text-decoration: none;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.or-cont {
+  overflow: hidden;
+}
+.or-cont > span {
+  display: inline-block;
+  position: relative;
+}
+
+.or-cont > span::before,
+.or-cont > span::after {
+  background-color: #d7dade;
+}
+
+.or-cont > span::before {
+  margin-right: 15px;
+  right: 100%;
+}
+
+.or-cont > span::after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.or-cont > span::before,
+.or-cont > span::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+}
+
+.create {
+  padding: 16px 0;
+  border-radius: 5px;
+  border: none;
+  background: #42b72a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* tablet */
+@media only screen and (min-width: 770px) and (max-device-width: 1299px) {
+  .container {
+    width: 44%;
+  }
+
+  .create {
+    width: 50%;
+  }
+
+  .header {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* mobile */
+@media only screen and (min-width: 320px) and (max-device-width: 769.99px) {
+  .container {
+    width: 80%;
+  }
+
+  .create {
+    width: 70%;
+  }
+
+  .header {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

